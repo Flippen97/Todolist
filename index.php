@@ -62,6 +62,7 @@
 	$statement->execute();
 	$todos = $statement->fetchAll(PDO::FETCH_ASSOC);
     foreach($todos as $Todos){
+        
     require 'print_todo.php';
         
  } ?>
@@ -80,8 +81,13 @@
 	$statement->execute();
 	$todos = $statement->fetchAll(PDO::FETCH_ASSOC);
     foreach($todos as $Todos){
-       require 'print_todo_comp.php';
+        
+    require 'print_todo_comp.php';
+        
      }?>
   </div>
+  <footer>
+      <a href="https://github.com/Flippen97/Todolist"><p class="footer_text">Github</p></a>
+ </footer>
 </body>
 </html>
